@@ -1,0 +1,87 @@
+/* General Layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card Container */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 16px;
+  width: 250px;
+  border: 1px solid #eaeaea;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Image Placeholder Styling */
+.image-container {
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.image-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #d1d5db; /* Darker gray inner square */
+  border-radius: 12px;
+}
+
+/* Typography */
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #111;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #111;
+}
+
+/* Stock Badges */
+.stock-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px; /* Pill shape */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Green Badge */
+.stock-badge.in-stock {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+/* Red Badge */
+.stock-badge.out-of-stock {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
